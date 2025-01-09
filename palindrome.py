@@ -39,11 +39,11 @@ if __name__ == "__main__":
     print(f"66 is a palindrome? {is_palindrome('66')}")
     print(f"35 is a palindrome? {is_palindrome('35')}")
     print(f"121 is a palindrome? {is_palindrome('121')}")
-    print("\n")
-    print(f"10 after 1 depth_step: {depth_step('10')}")
+
+    print(f"\n10 after 1 depth_step: {depth_step('10')}")
     print(f"35 after 1 depth_step: {depth_step('35')}")
     print(f"233 after 1 depth_step: {depth_step('233')}")
-    print("\n")
-    print(f"11 has a palindrome depth of {palindrome_depth('11')}")
+
+    print(f"\n11 has a palindrome depth of {palindrome_depth('11')}")
     print(f"10 has a palindrome depth of {palindrome_depth('10')}")
     print(f"28 has a palindrome depth of {palindrome_depth('28')}")
