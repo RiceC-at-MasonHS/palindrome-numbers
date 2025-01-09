@@ -44,11 +44,11 @@ while True:
 
 # ask the user if they would like output as a raw dictionary, unsorted, sorted by keys, or sorted by values
 while True:
-    output_type = input("How would you like the output? (raw, simple, keys, values): ")
-    if output_type in ['raw', 'simple', 'keys', 'values']:
+    output_type = input("How would you like the output sorted? (raw, unsorted, keys, values): ")
+    if output_type in ['raw', 'unsorted', 'keys', 'values']:
         if output_type == 'raw':
             print_dict_raw(all_numbers)
-        elif output_type == 'simple':
+        elif output_type == 'unsorted':
             print_dict_simple(all_numbers)
         elif output_type == 'keys':
             print_dict_sorted_keys(all_numbers)
