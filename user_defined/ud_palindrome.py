@@ -61,8 +61,16 @@ def optimized_palindrome_depth(all_nums: dict) -> dict:
             all_nums[num[::-1]] = counter
     if __name__ == "__main__":
         print(f"optimized_palindrome_depth saved {how_many_steps_saved} operations")
-    print(f"optimized_palindrome_depth took {perf_counter()-start} seconds")
     return all_nums
+
+def performance_wrapper( func, *args, **kwargs):
+    """
+    Wrapper function to measure the performance of a function.
+    """
+    start = perf_counter()
+    result = func(*args, **kwargs)
+    print(f"{func.__name__} took {perf_counter()-start} seconds")
+    return result
 
 #------------------------------------------------------------------------------
 # Test the functions defined in this file
@@ -72,14 +80,14 @@ if __name__ == "__main__":
     print(f"66 is a palindrome? {is_palindrome('66')}")
     print(f"35 is a palindrome? {is_palindrome('35')}")
     print(f"121 is a palindrome? {is_palindrome('121')}")
-    print("\n")
-    print(f"10 after 1 depth_step: {depth_step('10')}")
+
+    print(f"\n10 after 1 depth_step: {depth_step('10')}")
     print(f"35 after 1 depth_step: {depth_step('35')}")
     print(f"233 after 1 depth_step: {depth_step('233')}")
-    print("\n")
-    print(f"11 has a palindrome depth of {palindrome_depth('11')}")
+
+    print(f"\n11 has a palindrome depth of {palindrome_depth('11')}")
     print(f"10 has a palindrome depth of {palindrome_depth('10')}")
     print(f"28 has a palindrome depth of {palindrome_depth('28')}")
-    print("\n")
-    print("Testing optimized_palindrome_depth for numbers 10-99")
+
+    print("\nTesting optimized_palindrome_depth for numbers 10-99")
     print(optimized_palindrome_depth({str(i):None for i in range(10,100)}))
