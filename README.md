@@ -20,6 +20,10 @@ Using this Scheme for defining palindrome-depth of a given number, **find the pa
 The two top-level files represent a solution to this problem that is well defined, with lots of comments and `Pythonic` best-practice. 
 
 The sub-folders represent variations on this solution that achieve different goals. 
-- **isolated**: is an example that does not use modules, and focuses on being a relatively short solution (by line-count)
-- **most_mini**: is an example that goes for shortest-possible line count, sacrificing readability
-- **user_defined**: is a variant where a user is prompted to provide the range of numbers (be warned - somewhere around 190-200 is a number that crashes the program. no promised above 200...)
+- `isolated`: is an example that does not use modules, and focuses on being a relatively short solution (by line-count)
+- `most_mini`: is an example that goes for shortest-possible line count, sacrificing readability
+- `user_defined`: is a variant where a user is prompted to provide the range of numbers (be warned: somewhere around 190-200 is a number that crashes the program. no promises above 200...)
+
+---
+
+This was written in `Python 3.12.8` but it doesn't do anything fancy: most python versions after 3.5 (where they introduced typing) would work. 
