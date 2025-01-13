@@ -56,4 +56,4 @@ while True:
             print_dict_sorted_values(all_numbers)
         break
     else:
-        print("Invalid input. Please enter 'raw', 'simple', 'keys', or 'values'.")
+        print("Invalid input. Please enter 'raw', 'unsorted', 'keys', or 'values'.")
